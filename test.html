@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>www.michiganpetroleum.us</title>
+
+   <style>
+      * {
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         -webkit-font-smoothing: antialiased;
+         box-sizing: border-box;
+         font-size: 1rem;
+         line-height: 1;
+         padding: 0;
+         margin: 0;
+      }
+
+      *::-webkit-scrollbar {
+         display: none;
+      }
+
+      a {
+         text-decoration: none;
+         color: white;
+      }
+
+      body {
+         background-color: black;
+         color: white;
+      }
+
+      header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100vw;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1rem 4rem;
+         z-index: 999;
+
+         color: white;
+         user-select: none;
+      }
+
+      .header__left {
+         display: flex;
+         flex-direction: column;
+         gap: .25rem;
+         align-items: center;
+         cursor: pointer;
+      }
+
+      .header__triangle {
+         width: 45px;
+         height: 39px;
+         clip-path: polygon(50% 100%, 0 0, 100% 0);
+         background-color: white;
+         margin-right: 1rem;
+      }
+
+      .header__logo {
+         font-size: 1.5rem;
+      }
+
+      .header__right {
+         display: flex;
+         gap: 1rem;
+         font-weight: 500;
+         align-items: center;
+      }
+
+      .header__link {
+         transition: .15s;
+      }
+
+      .header__link:hover {
+         cursor: pointer;
+         padding: .25rem;
+         background-color: rgba(255, 255, 255, .255);
+         border-radius: .25rem;
+      }
+
+
+
+      .landing {
+         width: 100vw;
+         height: 100vh;
+         overflow: hidden;
+      }
+
+      .landing__image {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+         filter: brightness(.255);
+      }
+
+      .landing__container {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+         align-items: center;
+         text-align: center;
+         width: 75%;
+      }
+
+      .landing__title {
+         font-size: 4rem;
+      }
+
+      .landing__description {
+         font-size: 2rem;
+         line-height: 1.25;
+      }
+
+      .landing__button {
+         padding: 1rem 2rem 1.25rem;
+         border: 2px solid #f84;
+         font-size: 1.5rem;
+         transition: .15s;
+         /* border-radius: 1rem; */
+      }
+
+      .landing__button:hover {
+         background-color: #f84;
+         color: black;
+      }
+
+      .content {
+         width: 100vw;
+         min-height: 100vh;
+         padding: calc(99px + 99px) 0 99px;
+         background-color: #123;
+      }
+
+      .content__container {
+         width: 75%;
+         margin: 0 auto;
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+      }
+
+      .content__title {
+         font-size: 3rem;
+      }
+
+      .content__description {
+         font-size: 2rem;
+         line-height: 1.25;
+         color: #abc;
+      }
+
+      .icon__holder {
+         width: 3rem;
+         height: 3rem;
+      }
+
+      box-icon {
+         width: 100%;
+         height: 100%;
+      }
+
+      footer {
+         width: 100vw;
+         min-height: 100vh;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <div class="header__left">
+         <div class="header__triangle"></div>
+         <div class="header__logo">MICHIGAN PETROLEUM</div>
+      </div>
+
+      <div class="header__right">
+         <div class="header__link">HOME</div>
+         <div class="header__link">ABOUT</div>
+         <div class="header__link">BUSINESS</div>
+         <div class="header__link">PRODUCTS</div>
+         <div class="header__link">LOGISTICS</div>
+         <div class="header__link">CONTACT</div>
+      </div>
+   </header>
+
+   <section>
+      <div class="landing">
+         <!-- <img src="https://peiship.com/wp-content/uploads/2018/10/oil-rig-png-hd-culture-1920.jpg" alt=""
+            class="landing__image"> -->
+         <img src="https://pbs.twimg.com/media/FvR1TWqWIAEjw3_.jpg:large" alt="" class="landing__image">
+         <div class="landing__container">
+            <div class="landing__title">MICHIGAN PETROLEUM LLC</div>
+            <div class="landing__description">
+               Welcome to Michigan Petroleum LLC, your premier source for quality fuel products and services in the
+               state of Texas, United States of America.
+            </div>
+            <div class="landing__button">Contact us</div>
+         </div>
+      </div>
+
+      <div class="content">
+         <div class="content__container">
+            <div class="content__title">Learn more about us</div>
+
+            <div class="content__description">
+               With a commitment to excellence and customer satisfaction, we strive to provide top-notch petroleum solutions to meet all of your fueling needs. As a locally owned and operated company, we take pride in serving our community and ensuring that you have access to the best fuel options available. Explore our website to learn more about our products, services, and how we can help fuel your success.
+            </div>
+
+            <div class="content__description">
+               Our company has a rich history of success in the industry, built on a foundation of integrity, reliability, and customer satisfaction. We strive to exceed our clients' expectations and establish long-lasting relationships based on trust and mutual benefit.
+            </div>
+
+            <div class="content__description">
+               we are a trusted leader in the oil trading industry, dedicated to providing top-tier services and products to meet the diverse needs of our clients. With a commitment to excellence, reliability, and customer satisfaction, we strive to deliver innovative solutions that drive success in the dynamic world of oil trading.
+            </div>
+
+            <!-- <div class="icon__holder">
+               <box-icon type='logo' name='instagram'></box-icon>
+            </div> -->
+         </div>
+      </div>
+
+      <footer></footer>
+   </section>
+
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
