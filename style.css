@@ -166,6 +166,7 @@ header {
    font-size: 1.5rem;
    font-weight: 500;
    animation: scroll 10s linear infinite;
+   color: white;
 }
 
 @keyframes scroll {
